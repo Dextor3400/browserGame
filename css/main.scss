@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_menu_content{
+    display: flex;
+    height: 100%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    .main_menu_logo_item{
+        font-size: 100px;
+    }
+
+    .main_menu_start{
+        margin-top: 120px;
+
+        a{
+            font-size: 30px;
+            text-decoration: none;
+            border: black solid 4px;
+            color: black;
+            padding: 0.8rem 1rem;
+        }
+        a:visited{
+            color: black;
+        }
+    }
+}
+
+.difficulty_selector{
+    display: grid;
+    grid-column: 100px 1fr 1fr 100px;
+    grid-template-areas: 
+    ". h h ."
+    ". dl di ."
+    ;
+
+    h1{
+        grid-area: h;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .difficulty_levels{
+        grid-area: dl;
+
+        li{
+            margin-top: 1rem;
+            list-style-type: none;
+            padding: 0.5rem 0;
+          
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: black;
+                margin: 0 0.5rem;
+                padding: 0 0.3rem;               
+            }
+        }
+
+        li:hover{
+            border: 2px rgb(177, 136, 2) solid;
+            background: rgb(177, 136, 2);
+        }
+    }
+
+    .difficulty_description{
+        grid-area: di;
+        margin: 1rem;
+    }
+}
+
+.character_creation_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameplay_wrapper{
+    display: grid;
+    justify-content: center;
+    height: 500px;
+    grid-template-columns: 1fr 1fr;
+
+    .player_character{
+        justify-self: center;
+        align-self: center;
+    }
+
+    .enemy_character{
+        justify-self: center;
+        align-self: center;
+    }
+}

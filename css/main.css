@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main_menu_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_menu_content .main_menu_logo_item {
+  font-size: 100px;
+}
+
+.main_menu_content .main_menu_start {
+  margin-top: 120px;
+}
+
+.main_menu_content .main_menu_start a {
+  font-size: 30px;
+  text-decoration: none;
+  border: black solid 4px;
+  color: black;
+  padding: 0.8rem 1rem;
+}
+
+.main_menu_content .main_menu_start a:visited {
+  color: black;
+}
+
+.difficulty_selector {
+  display: -ms-grid;
+  display: grid;
+  grid-column: 100px 1fr 1fr 100px;
+      grid-template-areas: ". h h ." ". dl di .";
+}
+
+.difficulty_selector h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: h;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.difficulty_selector .difficulty_levels {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: dl;
+}
+
+.difficulty_selector .difficulty_levels li {
+  margin-top: 1rem;
+  list-style-type: none;
+  padding: 0.5rem 0;
+}
+
+.difficulty_selector .difficulty_levels li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  margin: 0 0.5rem;
+  padding: 0 0.3rem;
+}
+
+.difficulty_selector .difficulty_levels li:hover {
+  border: 2px #b18802 solid;
+  background: #b18802;
+}
+
+.difficulty_selector .difficulty_description {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: di;
+  margin: 1rem;
+}
+
+.character_creation_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gameplay_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 500px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.gameplay_wrapper .player_character {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.gameplay_wrapper .enemy_character {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=main.css.map */
