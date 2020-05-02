@@ -84,16 +84,24 @@
 .gameplay_wrapper{
     display: grid;
     justify-content: center;
-    height: 500px;
+    height: 440px;
     grid-template-columns: 1fr 1fr;
 
-    .player_character{
-        justify-self: center;
-        align-self: center;
+    
     }
+    footer{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: black 1px solid;
 
-    .enemy_character{
-        justify-self: center;
-        align-self: center;
-    }
+        .player_character {
+            display: flex;
+        }
+
+        .enemy_character {
+            display: flex;
+        }
 }
